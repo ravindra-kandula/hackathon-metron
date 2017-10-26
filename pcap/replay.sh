@@ -1,4 +1,5 @@
 #!/bin/bash
+#
 KAFKA_BROKER=demo.hortonworks.com:6667
 VIRTUAL_INTERFACE=dummy0
 PCAP_TOPIC=pcap-index
