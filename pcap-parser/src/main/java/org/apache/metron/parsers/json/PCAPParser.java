@@ -17,22 +17,19 @@
  */
 package org.apache.metron.parsers.json;
 
-import com.fasterxml.jackson.core.type.TypeReference;
-import com.google.common.base.Joiner;
-import com.google.common.collect.ImmutableList;
-import org.apache.metron.common.utils.JSONUtils;
-import org.apache.metron.parsers.BasicParser;
 import java.util.Iterator;
-import org.json.simple.JSONObject;
-import org.json.simple.JSONValue;
-import org.json.simple.parser.JSONParser;
-import org.apache.metron.pcap.PcapHelper;
-import org.apache.metron.pcap.PacketInfo;
-
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
-import java.math.BigDecimal;
+
+import org.apache.metron.pcap.PacketInfo;
+import org.apache.metron.pcap.PcapHelper;
+import org.json.simple.JSONObject;
+import org.json.simple.JSONValue;
+
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.google.common.base.Joiner;
+import com.google.common.collect.ImmutableList;
 
 public class PCAPParser extends BasicParser {
   private static interface Handler {
@@ -117,7 +114,7 @@ public class PCAPParser extends BasicParser {
        byte[] packet = pmessage.get(0).getPacketBytes();
        //long us_sec = PcapHelper.getTimestamp(rawMessage);
        String spacket = new String(packet,"US-ASCII").replaceAll("[^\\x00-\\x7F]", "");
-       if (spacket.toLowerCase().contains("content-type: text/plain"))       
+       if (spacket.toLowerCase().contains("ftp_doc.txt"))       
          ip4.put("is_alert", "true");
        //ip4.put("timestamp",Long.toString(us_sec));
        originalString = ip4.toString(); 
