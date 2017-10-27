@@ -5,6 +5,10 @@
 
 The Accelerated PCAP Forensics Solution enables your company the ability to capture, scan, and analyze PCAP data, perform a detailed forensics analysis, and to better prepare you to react in a meaningful way to these threats in near real-time
 
+#### Prerequistes
+
+- Python 2.7+ needed to be installed
+
 #### Install
 
 The following script will provision a HCP instance on AWS and configure it with the latest version of the solution
@@ -12,9 +16,8 @@ The following script will provision a HCP instance on AWS and configure it with 
 ```
 git clone https://github.com/ravindra-kandula/hackathon-metron
 cd hackathon-metron
-./setup.sh
+python ./install.py
 ```
-
 
 #### Start Demo
 
