@@ -2,12 +2,12 @@
 #
 KAFKA_BROKER=demo.hortonworks.com:6667
 VIRTUAL_INTERFACE=dummy0
-PCAP_TOPIC=pcap-index
+PCAP_TOPIC=pcap
 #Take the name of the replay file from the command line if provided
 if [ $# -gt 0 ];then
     REPLAY_FILE=$1
 else
-    REPLAY_FILE=/home/ec2-user/pcap/suspicious_ftp_traffic.pcap
+    REPLAY_FILE=../captures/suspicious_ftp_traffic.pcap
 fi
 function startReplay {
 # Make sure the dummy network interface is loaded
