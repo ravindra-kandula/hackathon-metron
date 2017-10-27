@@ -1,2 +1,2 @@
-##Accelerated PCAP
+# Hortonworks Great Lakes Q4 Hackathon 
 
