@@ -9,9 +9,9 @@ The Accelerated PCAP Forensics Solution enables your company the ability to capt
 
 The following script will provision a HCP instance on AWS and configure it with the latest version of the solution
 
-`git clone https://github.com/ravindra-kandula/hackathon-metron`
-`cd hackathon-metron`
-`./setup.sh`
+```git clone https://github.com/ravindra-kandula/hackathon-metron
+cd hackathon-metron
+./setup.sh```
 
 
 #### Start Demo
