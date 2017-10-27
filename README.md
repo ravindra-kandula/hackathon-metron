@@ -16,7 +16,7 @@ The following script will provision a HCP instance on AWS and configure it with 
 ```
 git clone https://github.com/ravindra-kandula/hackathon-metron
 cd hackathon-metron
-python ./install.py
+python ./install.py -key <aws key>
 ```
 
 #### Start Demo
